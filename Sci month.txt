@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Science Month</title></head>
+<body>
+<p>1. I learned how science helps improve our daily lives.<br>
+2. I can apply it by being curious and doing experiments responsibly.<br>
+3. Yes, I helped in presenting our project.<br>
+4. I would explain it by showing examples of simple experiments.<br>
+5. It is important because it develops our creativity and love for learning.<br><br>
+Photo Credits:LPRESS</p><br>
+
+
+<img src="Sci.jpg" width="500" height="333"><br>
+
+<img src="Scie.jpg" width="500" height="333"><br>
+<video width="400" controls>
+  <source src="Sci.mp4" type="video/mp4">
+  <source src="Sci.ogg" type="video/ogg">
+</video>
+</body>
+</html>

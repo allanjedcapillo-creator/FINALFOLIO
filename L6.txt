@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  button:hover {background-color: green; color: white;}
+  p:hover {background-color: lightyellow;}
+</style>
+</head>
+<body>
+  <button>Hover over me!</button>
+  <p>Move your mouse here to see the effect.</p>
+</body>
+</html>

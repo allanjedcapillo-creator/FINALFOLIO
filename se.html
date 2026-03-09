@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TLE/ICT 9 - Fourth Quarter Summary</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 50px 0;
+    background: linear-gradient(135deg, #6a0dad, #9b59ff);
+    color: white;
+    text-align: center;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 12px;
+  }
+  h1 { margin-bottom: 5px; }
+  p.subtitle { font-style: italic; margin: 0 0 20px 0; }
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  button:hover { opacity: 0.85; }
+  .showBtn { background: #ffd700; }
+  .backBtn { background: #ff6b6b; color: white; }
+  .section {
+    background: rgba(255,255,255,0.08);
+    padding: 15px;
+    border-left: 5px solid #ffd700;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.6;
+    border-radius: 6px;
+  }
+  code { background: rgba(255,255,255,0.2); padding: 2px 6px; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>TLE/ICT 9 - Fourth Quarter</h1>
+  <p class="subtitle">Lessons 1–4: Introduction, Placement, Variables, and Events</p>
+
+  <button class="showBtn" onclick="showSummary()">Show Summary</button>
+  <button class="backBtn" onclick="goBack()">Go Back</button>
+
+  <div id="summaryContent"></div>
+</div>
+
+<script>
+function showSummary() {
+  const studentName = "Crispin";
+
+  const content = `
+    <div class="section">
+      <b>Lesson 1: What Can JS Do?</b><br>
+      JavaScript can react to events, validate data, and create dynamic content.<br>
+      Example function for form validation:<br>
+      <code>
+function validateForm() {<br>
+&nbsp;&nbsp;var input = prompt("Please enter your student ID:");<br>
+&nbsp;&nbsp;if (input == null || input == "") {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;alert("Validation Failed: ID is required.");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return false;<br>
+&nbsp;&nbsp;} else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;alert("Welcome, ${studentName}! ID verified.");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return true;<br>
+&nbsp;&nbsp;}<br>
+}
+      </code>
+    </div>
+
+    <div class="section">
+      <b>Lesson 2: Guidelines & Syntax</b><br>
+      - Case Sensitive: <code>myVar != MyVar</code><br>
+      - White Space: JS ignores extra spaces for readability.<br>
+      - Breaking Lines: Use backslash (<code>\\</code>) for long strings, never split keywords.
+    </div>
+
+    <div class="section">
+      <b>Lesson 2: Script Placement</b><br>
+      - HEAD Section: Use for pre-loading scripts and function declarations.<br>
+      - BODY Section: Use for scripts that execute as the page renders.
+    </div>
+
+    <div class="section">
+      <b>Lesson 3: Variables & Data Types</b><br>
+      Rules: No spaces, no punctuation, cannot start with a digit, case-sensitive.<br>
+      Examples:<br>
+      <code>var studentName = "Crispin";</code> &nbsp; // String<br>
+      <code>var age = 16;</code> &nbsp; // Integer<br>
+      <code>var isEnrolled = true;</code> &nbsp; // Boolean<br>
+      <code>var currentGrade = 97.5;</code> &nbsp; // Float
+    </div>
+
+    <div class="section">
+      <b>Lesson 4: Conditional Statements</b><br>
+      Example inside validateForm function:<br>
+      <code>
+if (input == null || input == "") {<br>
+&nbsp;&nbsp;alert("Validation Failed: ID is required.");<br>
+} else {<br>
+&nbsp;&nbsp;alert("Welcome, ${studentName}! ID verified.");<br>
+}
+      </code>
+    </div>
+  `;
+
+  document.getElementById("summaryContent").innerHTML = content;
+}
+
+function goBack() {
+  window.history.back();
+}
+</script>
+
+</body>
+</html>

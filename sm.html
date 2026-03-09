@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master Lesson: JavaScript Foundations</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 50px 0;
+    background: linear-gradient(135deg,#6a0dad,#9b59ff);
+    color: white;
+    text-align: center;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 12px;
+  }
+  h1 { margin-bottom: 5px; }
+  p.subtitle { margin-top: 0; margin-bottom: 20px; font-style: italic; }
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  button:hover { opacity: 0.85; }
+  .showBtn { background: #ffd700; }
+  .backBtn { background: #ff6b6b; color: white; }
+  .section {
+    background: rgba(255,255,255,0.08);
+    padding: 15px;
+    border-left: 5px solid #ffd700;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.6;
+    border-radius: 6px;
+  }
+  .section b { font-size: 1.1em; }
+  code { background: rgba(255,255,255,0.2); padding: 2px 6px; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Master Lesson</h1>
+  <p class="subtitle">JavaScript Foundations: Placement, Guidelines, Variables & Core Components</p>
+
+  <button class="showBtn" onclick="showLesson()">Show Lesson</button>
+  <button class="backBtn" onclick="goBack()">Go Back</button>
+
+  <div id="lessonContent"></div>
+</div>
+
+<script>
+function showLesson() {
+  const myHome = "Manila";
+  const MyHome = "Quezon City";
+
+  const content = `
+    <div class="section">
+      <b>1. Script Placement</b><br>
+      Head: Best for pre-loading functions before events.<br>
+      Body: Best for generating content as page loads.<br>
+      External: Use &lt;script src="filename.js"&gt;&lt;/script&gt;.
+    </div>
+
+    <div class="section">
+      <b>2. JavaScript Guidelines</b><br>
+      JavaScript is case-sensitive:<br>
+      <code>myHome = ${myHome}</code><br>
+      <code>MyHome = ${MyHome}</code><br>
+      Extra spaces are ignored for readability.<br>
+      Use backslash (\) to continue long lines:<br>
+      <code>document.write("This is a long sentence \\<br>broken into two lines.");</code>
+    </div>
+
+    <div class="section">
+      <b>3. Variables & Data Types</b><br>
+      Declaring variables:<br>
+      <code>var firstname = "Crispin";</code><br>
+      <code>var lastname = "Santiago";</code><br><br>
+      Supported Data Types:<br>
+      <code>Number (Integer): 101</code><br>
+      <code>Number (Float): 97.1</code><br>
+      <code>Boolean: true</code><br>
+      <code>Null: null</code><br>
+      <code>Undefined: var emptyVar;</code>
+    </div>
+
+    <div class="section">
+      <b>4. Naming Rules</b><br>
+      - Must start with a letter or underscore (not a digit).<br>
+      - Can contain letters, digits (0-9), and underscores.<br>
+      - NO spaces or punctuation allowed.
+    </div>
+
+    <div class="section">
+      <b>5. Core Components</b><br>
+      JavaScript uses Objects, Methods, and Properties to interact with the DOM.<br>
+      <br>
+      Lesson Summary:<br>
+      Nature: Interpreted, high-level, client-side scripting language.<br>
+      Purpose: To create dynamic and interactive web experiences.<br>
+      Tools Needed: Text Editor, Web Browser
+    </div>
+  `;
+
+  document.getElementById("lessonContent").innerHTML = content;
+}
+
+function goBack() {
+  window.history.back();
+}
+</script>
+
+</body>
+</html>

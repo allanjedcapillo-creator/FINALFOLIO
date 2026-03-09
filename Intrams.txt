@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Intrams</title></head>
+<body>
+<p>1. I learned about teamwork and sportsmanship.<br>
+2. I can apply it by cooperating well with others in group tasks.<br>
+3. Yes, I participated in cheering and supporting my team.<br>
+4. I would explain it as a way to build unity and friendship through games.<br>
+5. It is important because it helps students stay active and develop discipline.<br><br>
+Photo Credits:LPRESS</p><br>
+
+
+<img src="Danc.jpg" width="500" height="333"><br>
+
+<img src="dANCE.jpg" width="500" height="333"><br>
+<video width="400" controls>
+  <source src="Intrams.mp4" type="video/mp4">
+  <source src="Intrams.ogg" type="video/ogg">
+</video>
+</body>
+</html>

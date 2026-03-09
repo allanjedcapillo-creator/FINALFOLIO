@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Lesson 1</title></head>
+<body style="background-color:purple;color:ivory;font-family:Arial;font-size:30px;text-align:center;">
+
+<p>Content layer</p>
+<img src="Content.png" width="500" height="333">
+<img src="Content 2.png" width="500" height="333">
+<img src="Content 3.png" width="500" height="333">
+<img src="Content 4.png" width="500" height="333">
+
+<p>Presentation Layer</p>
+<img src="Style.png" width="500" height="333">
+<img src="Style 2.png" width="500" height="333">
+<img src="Style 3.png" width="500" height="333">
+
+<p>Behavior Layer</p>
+<img src="Behavior.png" width="500" height="333">
+
+</body>
+</html>

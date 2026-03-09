@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Teachers day</title></head>
+<body>
+<p>1. I learned to appreciate the hard work and dedication of teachers.<br>
+2. I can apply it by respecting and helping my teachers more.<br>
+3. Yes, I participated by giving messages and helping with the event.<br>
+4. I would explain it as a celebration of gratitude for teachers’ efforts.<br>
+5. It is important because it shows respect and appreciation for educators.<br><br>
+PHOTO CREDITS:ANG PAHAM</p><br>
+
+
+<img src="teach.jpg" width="500" height="333"><br>
+
+<img src="teac.jpg" width="500" height="333"><br>
+<video width="400" controls>
+  <source src="teach.mp4" type="video/mp4">
+  <source src="teach.ogg" type="video/ogg">
+</video>
+</body>
+</html>

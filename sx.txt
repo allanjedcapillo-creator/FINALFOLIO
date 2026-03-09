@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 2 - ICT 9</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 50px 0;
+    background: linear-gradient(135deg, #6a0dad, #9b59ff);
+    color: white;
+    text-align: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 12px;
+  }
+  h1 { margin-bottom: 5px; }
+  p.subtitle { margin-top: 0; margin-bottom: 20px; font-style: italic; }
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  button:hover { opacity: 0.85; }
+  .showBtn { background: #ffd700; }
+  .backBtn { background: #ff6b6b; color: white; }
+  .section {
+    background: rgba(255,255,255,0.08);
+    padding: 15px;
+    border-left: 5px solid #ffd700;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.6;
+    border-radius: 6px;
+  }
+  .section b { font-size: 1.1em; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Lesson 2</h1>
+  <p class="subtitle">Script Placement, Comments & Guidelines</p>
+
+  <button class="showBtn" onclick="showLesson()">Show Lesson</button>
+  <button class="backBtn" onclick="goBack()">Go Back</button>
+
+  <div id="lessonContent"></div>
+</div>
+
+<script>
+function showLesson() {
+  const myHome = "Manila";
+  const MyHome = "Quezon City";
+
+  const content = `
+    <div class="section">
+      <b>Script Placement</b><br>
+      Head: Scripts in the head section load before the page content.<br>
+      Body: Scripts in the body run while the page loads.<br>
+      External File: JavaScript can be placed in an external file and linked using &lt;script src='file.js'&gt;&lt;/script&gt;.
+    </div>
+
+    <div class="section">
+      <b>Comments</b><br>
+      // is used for single-line comments.<br>
+      /* */ is used for multi-line comments.
+    </div>
+
+    <div class="section">
+      <b>JavaScript Guidelines</b><br>
+      JavaScript is case-sensitive.<br>
+      Example:<br>
+      myHome = ${myHome}<br>
+      MyHome = ${MyHome}<br>
+      Extra spaces in code are ignored.
+    </div>
+
+    <div class="section">
+      <b>Key Definitions</b><br>
+      Script: A set of instructions that tells a computer what to do.<br>
+      Tools: Text Editor, Web Browser<br>
+      Components: Objects, Methods, Properties
+    </div>
+  `;
+
+  document.getElementById("lessonContent").innerHTML = content;
+}
+
+function goBack() {
+  window.history.back();
+}
+</script>
+
+</body>
+</html>

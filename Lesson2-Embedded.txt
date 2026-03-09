@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practice</title>
+p{color:blue}
+h1{color:red;}
+</head>
+<body>
+<h1>Quote</h1>
+<div>
+<p>This is the first paragraph</p>
+</div>
+<p>This is the 2nd paragraph</p>
+</body>
+</html>

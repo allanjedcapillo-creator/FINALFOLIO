@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  p.quote {font-style: italic; color: darkgreen;}
+  div.quote {border-left: 4px solid darkgreen; padding: 5px;}
+</style>
+</head>
+<body>
+  <p class="quote">"Knowledge is power."</p>
+  <div class="quote">This box highlights a quotation block.</div>
+</body>
+</html>

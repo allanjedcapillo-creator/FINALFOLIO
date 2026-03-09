@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ICT 9 - Lesson 1</title>
+
+<style>
+/* Animated Background */
+body{
+  font-family:'Segoe UI',sans-serif;
+  margin:0;
+  background:linear-gradient(-45deg,#6a0dad,#9b59ff,#ffd700,#ff9f00);
+  background-size:400% 400%;
+  animation:bgmove 12s ease infinite;
+  color:white;
+}
+
+@keyframes bgmove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* Container */
+.container{
+  max-width:900px;
+  margin:60px auto;
+  padding:30px;
+  background:rgba(0,0,0,0.6);
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Titles */
+h1{text-align:center;margin-bottom:5px;}
+.subtitle{text-align:center;opacity:0.8;margin-bottom:25px;}
+
+/* Buttons */
+button{
+  padding:12px 25px;
+  border:none;
+  border-radius:25px;
+  font-weight:bold;
+  cursor:pointer;
+  margin:10px;
+}
+.showBtn{background:#ffd700;}
+.showBtn:hover{transform:scale(1.08);}
+.backBtn{background:#ff6b6b;color:white;}
+.backBtn:hover{transform:scale(1.08);}
+
+/* Lesson box */
+.section{
+  margin-top:20px;
+  padding:15px;
+  background:rgba(255,255,255,0.08);
+  border-left:5px solid #ffd700;
+  border-radius:10px;
+  line-height:1.6;
+  text-align:left;
+}
+.section b{color:#ffd700;}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>ICT 9</h1>
+<p class="subtitle">Lesson 2: Script Placement, Comments & Guidelines</p>
+
+<center>
+<button class="showBtn" onclick="displayLesson()">Show Lesson</button>
+<button class="backBtn" onclick="goBack()">Go Back</button>
+</center>
+
+<div id="output"></div>
+</div>
+
+<script>
+// Lesson content
+
+const scriptPlacement = {
+  head: "Scripts in the head section load before the page content.",
+  body: "Scripts in the body run while the page loads.",
+  external: "JavaScript can be placed in an external file and linked using <script src='file.js'></script>."
+};
+
+const definitions = {
+  script: "A script is a set of instructions that tells a computer what to do.",
+  tools: ["Text Editor","Web Browser"],
+  components: ["Objects","Methods","Properties"]
+};
+
+let myHome = "Manila";
+let MyHome = "Quezon City";
+
+function displayLesson(){
+  let text="";
+
+  text+=`
+  <div class="section">
+    <b>Script Placement</b><br>
+    Head: ${scriptPlacement.head}<br>
+    Body: ${scriptPlacement.body}<br>
+    External File: ${scriptPlacement.external}
+  </div>
+  `;
+
+  text+=`
+  <div class="section">
+    <b>Comments</b><br>
+    // is used for single-line comments.<br>
+    /* */ is used for multi-line comments.
+  </div>
+  `;
+
+  text+=`
+  <div class="section">
+    <b>JavaScript Guidelines</b><br>
+    JavaScript is case-sensitive.<br>
+    Example:<br>
+    myHome = ${myHome}<br>
+    MyHome = ${MyHome}<br>
+    Extra spaces in code are ignored.
+  </div>
+  `;
+
+  text+=`
+  <div class="section">
+    <b>Key Definitions</b><br>
+    Script: ${definitions.script}<br>
+    Tools: ${definitions.tools.join(", ")}<br>
+    Components: ${definitions.components.join(", ")}
+  </div>
+  `;
+
+  document.getElementById("output").innerHTML=text;
+}
+
+// Go back button
+function goBack(){ window.history.back(); }
+
+</script>
+
+</body>
+</html>
+
+.showBtn{
+background:#ffd700;
+}
+
+.showBtn:hover{
+transform:scale(1.08);
+}
+
+.backBtn{
+background:#ff6b6b;
+color:white;
+}
+
+.backBtn:hover{
+transform:scale(1.08);
+}
+
+/* Lesson box */
+
+.section{
+margin-top:20px;
+padding:15px;
+background:rgba(255,255,255,0.08);
+border-left:5px solid #ffd700;
+border-radius:10px;
+line-height:1.6;
+}
+
+.section b{
+color:#ffd700;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ICT 9</h1>
+<p class="subtitle">Lesson 1: JavaScript Introduction</p>
+
+<center>
+<button class="showBtn" onclick="showLesson()">Show Lesson</button>
+<button class="backBtn" onclick="goBack()">Go Back</button>
+</center>
+
+<div id="output"></div>
+
+</div>
+
+<script>
+
+/* LESSON INFORMATION */
+
+// Definition
+const javaScriptDefinition={
+nature:"JavaScript is a client-side scripting language that runs in the user's web browser.",
+purpose:"It allows developers to create dynamic and interactive web pages.",
+status:"It is one of the most widely used programming languages on the internet."
+};
+
+// History
+const jsHistory={
+creator:"Brendan Eich",
+company:"Developed at Netscape",
+year:"1995",
+originalNames:["Mocha","LiveScript"],
+milestone:"Later supported by Internet Explorer which made it widely used."
+};
+
+// Characteristics
+const characteristics=[
+"JavaScript is lightweight and easy to learn compared to many programming languages.",
+"It is case-sensitive, meaning 'Variable' and 'variable' are different.",
+"It is interpreted, meaning it runs directly in the browser without compilation.",
+"It supports dynamic typing, allowing variables to change data types during execution.",
+"It works well with HTML and CSS to create interactive web pages."
+];
+
+// Capabilities
+const capabilities=[
+"Responds to user events like mouse clicks, key presses, and page loading.",
+"Validates form inputs before sending them to the server.",
+"Stores user data using cookies or local storage.",
+"Creates visual effects such as animations, sliders, and interactive menus."
+];
+
+// Website types
+const websiteTypes={
+static:"Static websites display the same content for every visitor and do not change unless manually edited.",
+dynamic:"Dynamic websites interact with users and change content depending on user actions or preferences."
+};
+
+// Function to display lesson
+
+function showLesson(){
+
+let text="";
+
+text+=`
+<div class="section">
+<b>Nature of JavaScript</b><br>
+${javaScriptDefinition.nature}<br><br>
+${javaScriptDefinition.purpose}<br><br>
+${javaScriptDefinition.status}
+</div>
+`;
+
+text+=`
+<div class="section">
+<b>History of JavaScript</b><br>
+Creator: ${jsHistory.creator}<br>
+Company: ${jsHistory.company}<br>
+Year Created: ${jsHistory.year}<br>
+Original Names: ${jsHistory.originalNames.join(", ")}<br>
+Milestone: ${jsHistory.milestone}
+</div>
+`;
+
+text+=`
+<div class="section">
+<b>Characteristics of JavaScript</b><br>
+${characteristics.join("<br>")}
+</div>
+`;
+
+text+=`
+<div class="section">
+<b>What JavaScript Can Do</b><br>
+${capabilities.join("<br>")}
+</div>
+`;
+
+text+=`
+<div class="section">
+<b>Static vs Dynamic Websites</b><br>
+Static Website: ${websiteTypes.static}<br><br>
+Dynamic Website: ${websiteTypes.dynamic}
+</div>
+`;
+
+document.getElementById("output").innerHTML=text;
+
+}
+
+// Go back button
+
+function goBack(){
+window.history.back();
+}
+
+</script>
+
+</body>
+</html>

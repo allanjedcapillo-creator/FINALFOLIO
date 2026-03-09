@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> PRACTICE EXTERNAL </title>
+<link rel="stylesheet" href="practice.css" type="text/css">
+</head>
+<body>
+<p>THIS IS THE 1ST PARAGRAPH</p>
+</body>
+</html>

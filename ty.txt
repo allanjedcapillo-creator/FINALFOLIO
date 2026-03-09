@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Typography Reflection - Grade 9 Faith by Allan Jed P. Capillo</title>
+
+<style>
+body{font-family: Georgia, serif;
+line-height: 1.8;
+color:#2c3e50;}
+
+h1{font-size:42px;
+text-align:center;
+letter-spacing:2px;}
+
+h2{text-align:center;
+font-style:italic;
+color:#7f8c8d;}
+
+p{font-size:18px;
+text-align:justify;}
+
+.quote{text-align:center;
+font-style:italic;
+color:#6c5ce7;}
+
+.author{text-align:right;
+font-weight:bold;}
+</style>
+
+</head>
+
+<body>
+
+<h1>Reflection of S.Y. 2025–2026</h1>
+<h2>Grade 9 Faith</h2>
+
+<p>
+School Year 2025–2026 as a student of Grade 9 Faith was a memorable journey filled with learning, experiences, and meaningful activities.
+</p>
+
+<p class="quote">
+“Growth comes from the experiences we share and the lessons we learn.”
+</p>
+
+<p>
+Events like MVP, VPOP, Christmas Party, Battle of the Bands, Miting de Avance, and the Noli Me Tangere play helped us develop confidence, teamwork, and appreciation for our culture and talents.
+</p>
+
+<p class="author">
+–Allan Jed P. Capillo
+</p>
+<script>
+function goBack(){
+    window.history.back();
+}
+</script>
+
+<center>
+<button class="fancy-btn" onclick="goBack()">Go Back</button>
+</center>
+
+<style>
+.fancy-btn {
+    background: linear-gradient(90deg, #6a0dad, #9b59ff);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.fancy-btn:hover {
+    background: linear-gradient(90deg, #ff9f00, #ffd700);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.fancy-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+</style>
+
+</body>
+</html>

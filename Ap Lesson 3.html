@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 3: Sektor ng Industriya</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:url("16598.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color:#000;
+}
+
+.box{
+    background:white;
+    width:85%;
+    margin:40px auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+h1,h2{
+    text-align:center;
+    color:#0072ff;
+}
+
+.activity input{
+    padding:10px;
+    margin:5px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.activity .grid-row{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+    gap:15px;
+}
+
+.activity-img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+    border:1px solid #0072ff;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(45deg,#00c6ff,#0072ff);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover{
+    transform:scale(1.1);
+    background:linear-gradient(45deg,#0072ff,#00c6ff);
+}
+
+.lesson{
+    display:none;
+    line-height:1.6;
+    opacity:0;
+    transition: opacity 1s ease;
+}
+
+.lesson.show{
+    display:block;
+    opacity:1;
+}
+
+.card{
+    background:#f0f8ff;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:15px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    margin:0;
+    cursor:pointer;
+    color:#0072ff;
+}
+
+.card h3:hover{
+    color:#0056b3;
+}
+
+.card-content{
+    display:none;
+    margin-top:10px;
+}
+
+p{
+    text-align:justify;
+    margin-bottom:10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="box">
+
+<h2>Activity: Hulaan ang Salita</h2>
+<p align="center">Hulaan ang mga salita na may kinalaman sa industriya upang mabuksan ang Ikatlong Aralin.</p>
+
+<div class="activity">
+<div class="grid-row">
+<img src="pm.jpg" class="activity-img">
+<input id="a1" placeholder="1">
+</div>
+
+<div class="grid-row">
+<img src="pk.jpg" class="activity-img">
+<input id="a2" placeholder="2">
+</div>
+
+<div class="grid-row">
+<img src="ko.jpg" class="activity-img">
+<input id="a3" placeholder="3">
+</div>
+
+<div class="grid-row">
+<img src="ut.jpg" class="activity-img">
+<input id="a4" placeholder="4">
+</div>
+</div>
+
+<br>
+<button onclick="check()">Suriin ang Sagot</button>
+<p id="result"></p>
+</div>
+
+<!-- LESSON NOTES -->
+<div class="box lesson" id="lesson">
+
+<h1>Lesson 3: Sektor ng Industriya</h1>
+
+<p>Ang sektor ng industriya ay tumutukoy sa pagproseso ng mga hilaw na materyales upang makagawa ng mga produktong ginagamit ng tao.</p>
+
+<!-- SUB-SEKTOR -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Sub-Sektor ng Industriya</h3>
+<div class="card-content">
+<p><strong>Pagmimina:</strong> Pagkuha at pagproseso ng mga yamang mineral (metal, di-metal, o enerhiya) upang gawing tapos na produkto o kabahagi ng isang yaring kalakal.<br>
+Ang mismong produkto, hilaw man o naproseso, ay nagbibigay ng kita para sa bansa.</p>
+
+<p><strong>Pagmamanupaktura:</strong> Paggawa ng mga produkto sa pamamagitan ng manual labor o makina.<br>
+Nagkakaroon ng pisikal o kemikal na transpormasyon ang mga materyal o bahagi nito sa pagbuo ng bagong produkto.</p>
+
+<p><strong>Konstruksyon:</strong> Pagtatayo ng mga gusali, estruktura, at iba pang land improvements.</p>
+
+<p><strong>Utilities:</strong> Pagtugon sa pangunahing pangangailangan ng mamamayan tulad ng tubig, kuryente, at gas.<br>
+Paglalatag ng imprastraktura at angkop na teknolohiya upang maihatid ang serbisyo.</p>
+</div>
+</div>
+
+<!-- KAHALAGAHAN -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Kahalagahan ng Sektor ng Industriya</h3>
+<div class="card-content">
+<p>Tumatanggap ng mga produkto mula sa sektor ng agrikultura at serbisyo mula sa sektor ng paglilingkod.<br>
+Nagkakaloob ng hanapbuhay sa maraming Pilipino.<br>
+Nagpapasok ng dolyar sa bansa.<br>
+Nakagagamit ng makabagong teknolohiya.<br>
+Gumagawa ng mga intermediate products na ginagamit sa paggawa ng iba pang produkto.</p>
+</div>
+</div>
+
+<!-- PAGKAKAUGNAY NG AGRIKULTURA AT INDUSTRIYA -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Pagkakaugnay ng Agrikultura at Industriya</h3>
+<div class="card-content">
+<p>Nagmumula sa agrikultura ang mga hilaw na sangkap para sa mga produkto ng industriya.<br>
+Ang mga ginagamit na traktora, sasakyang pangingisda, at iba pang produkto ay mula sa industriya at ginagamit ng mga magsasaka.<br>
+Ang dami ng lakas-paggawa sa mga mamimili ay nagpapakita ng pagtutulungan ng sektor ng industriya at agrikultura.<br>
+Ang agrikultura ang pinagmumulan ng pagkain ng mga industriya.<br>
+Ang industriya ang nagbibigay ng malaking kontribusyon sa ekonomiya.<br>
+Ang mga sangkap ay nagkakaroon ng transpormasyon dahil sa mga manggagawa na gumagawa upang madagdagan ang halaga nito.</p>
+</div>
+</div>
+
+<!-- URI NG INDUSTRIYA -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Uri ng Industriya</h3>
+<div class="card-content">
+<p><strong>Cottage Industry (Industriyang Pantahanan):</strong> Maliit, kadalasang ginawa sa tahanan o maliit na workshop. Produkto ay handmade gamit ang lokal na materyales.<br>
+Manggagawa: Miyembro ng pamilya o iilang tao.<br>
+Kapital: Napakababa at simple.<br>
+Halimbawa: Paggawa ng bagoong, paghahabi, basket, wood carving, pandekorasyon.</p>
+
+<p><strong>Small Scale Industry (Maliit na Industriya):</strong> Negosyong mas malaki sa cottage industry ngunit hindi aabot sa laki ng korporasyon. Gumagamit ng makinarya o kuryente.<br>
+Manggagawa: 10-99.<br>
+Kapital: Katamtaman (P1 milyon - P10 milyon).<br>
+Lokasyon: Urban center o industrial estate.<br>
+Halimbawa: Bakery, paggawa ng sapatos, garments, muwebles.</p>
+
+<p><strong>Large Scale Industry (Malaking Industriya):</strong> May malaking kapital, advanced na teknolohiya o makinarya, malawakan ang produksyon.<br>
+Manggagawa: Daan-daan o libu-libong manggagawa.<br>
+Kapital: Napakalaki para sa makinarya at planta.<br>
+Produksyon: Mass production.<br>
+Halimbawa: Steel plants, planta ng sasakyan, oil refineries, malalaking textile mills.</p>
+</div>
+</div>
+
+<!-- SULIRANIN NG INDUSTRIYA -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Suliranin ng Industriya</h3>
+<div class="card-content">
+<p>Pondo at kompetisyon.<br>
+Paghina ng lokal na industriya.<br>
+Demand.</p>
+</div>
+</div>
+
+<!-- MGA PATAKARAN -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Mga Patakarang Pang-ekonomiya</h3>
+<div class="card-content">
+<p><strong>Filipino First Policy:</strong> Nagsimula sa programang Filipino Muna ni Pangulong Carlos P. Garcia. Naglalayong bigyan ng higit na partisipasyon ang mga Pilipino sa pagpapatakbo ng ekonomiya.<br>
+<strong>Oil Deregulation Law (Batas Republika 8479):</strong> Nagbukas ng kompetisyon sa industriya ng langis. Ang pamilihan ang nagdidikta sa presyo ng petrolyo.<br>
+<strong>Patakaran ng Microfinancing:</strong> Serbisyong pinansiyal ng mga bangko na may mababang interes sa mahihirap na pamilya.<br>
+<strong>Patakaran sa Online Business:</strong> Online shopping o retailing, online intermediary service, online advertisement, online auction.<br>
+<strong>Retail Nationalization Act of 1964 (Batas Republika 1180):</strong> Sampung taong palugit sa dayuhang kapitalista. Pilipino lamang ang maaaring magpatakbo.<br>
+<strong>Retail Trade Liberalization Act of 2000 (Batas Republika 8762):</strong> Binuksan ang kalakalang pagtitingi sa mga dayuhan.<br>
+<strong>Build-Operate-Transfer (Batas Republika 6957):</strong> Binibigyan ng karapatang bumuo ng pasilidad gamit sariling pondo.<br>
+<strong>Asset Privatization Trust:</strong> Pamahalaan nagbenta ng mga korporasyon sa pribadong sektor. Pinasimula ni Pangulong Corazon Aquino.</p>
+</div>
+</div>
+
+<!-- SANGAY NG PAMAHALAAN -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Sangay ng Pamahalaan na Tumulong sa Industriya</h3>
+<div class="card-content">
+<p><strong>Department of Trade and Industry:</strong> Tinututukan ang larangan ng industriya at pangangalakal.<br>
+<strong>Board of Investments:</strong> Tinutulungan ang nagsisimulang industriya at humihikayat sa mga dayuhang mamumuhunan.<br>
+<strong>Philippine Economic Zone Authority:</strong> Tumutulong sa mga mamumuhunan na makahanap ng lugar para sa negosyo.<br>
+<strong>Securities and Exchange Commission:</strong> Nagtatala at nagrerehistro sa mga kompanya sa bansa.</p>
+</div>
+</div>
+
+</div>
+
+<script>
+function check(){
+    let w1=document.getElementById("a1").value.toLowerCase();
+    let w2=document.getElementById("a2").value.toLowerCase();
+    let w3=document.getElementById("a3").value.toLowerCase();
+    let w4=document.getElementById("a4").value.toLowerCase();
+
+    if(w1=="pagmimina" && w2=="pagmamanupaktura" && w3=="konstruksyon" && w4=="utilities"){
+        document.getElementById("result").innerHTML="🎉 Tama! Nabuksan ang Lesson 3.";
+        let lesson = document.getElementById("lesson");
+        lesson.classList.add("show");
+        lesson.scrollIntoView({behavior:"smooth"});
+    } else{
+        document.getElementById("result").innerHTML="May mali. Subukan muli.";
+    }
+}
+
+function toggleCard(header){
+    const content = header.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
+}
+
+function goBack(){
+    window.history.back();
+}
+</script>
+
+<center>
+<button onclick="goBack()">Go Back</button>
+</center>
+
+</body>
+</html>

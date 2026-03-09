@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AP Aralin 5</title>
+<style type="text/css">
+p{color:maroon;font-family:Algerian;}
+h1{color:blue;font-family:arial;font-weight:200px;}
+</style>
+</head>
+<body bgcolor="ivory">
+<h1>Ekwilibriyo</h1><br>
+<p>Ang presyong ekwilibriyo ay ang lebel ng presyo na umiiral sa pamilihan upang maganap ang bilihan sa pagitang ng mamimili at prodyuser</p><br>
+<h1>Interaksiyong Pamilihan</h1><br>
+<p>Ang pamilihan ay isang lugar kung saan nagaganap ang epiktibong transaksiyon sa pagitan ng mamimili at prodyuser </p>
+
+<img src="Grap.jpg" width="500" height="333">
+
+<img src="Graph.jpg" width="500" height="333">
+</body>
+</html>

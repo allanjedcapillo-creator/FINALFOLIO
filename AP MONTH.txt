@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>AP month</title></head>
+<body>
+<p>1. I learned the importance of understanding our history and government.<br>
+2. I can apply it by being a responsible and informed citizen.<br>
+3. Yes, I joined group discussions and presentations.<br>
+4. I would explain it by connecting lessons to real events in the country.<br>
+5. It is important because it helps us know our rights and duties.<br><br>
+Photo Credits:AP CLUB</p><br>
+
+
+<img src="Ap.jpg" width="500" height="333"><br>
+
+<img src="aps.jpg" width="500" height="333"><br>
+<video width="400" controls>
+  <source src="Ap.mp4" type="video/mp4">
+  <source src="Ap.ogg" type="video/ogg">
+</video>
+</body>
+</html>

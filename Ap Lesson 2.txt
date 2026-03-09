@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 2: Agrikultura</title>
+
+<style>
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: url('16598.jpg') no-repeat center center fixed;
+    background-size: cover;    
+    color: #000;
+}
+
+.box{
+    background:white;
+    width:85%;
+    margin:40px auto;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.grid-row{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+    gap:20px;
+}
+
+.activity-img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+    transition: transform 0.3s ease;
+}
+
+.activity-img:hover{
+    transform: scale(1.1);
+}
+
+input{
+    padding:10px;
+    width:220px;
+    font-size:16px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:#0072ff;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:#0056b3;
+}
+
+.lesson{
+    display:none;
+    line-height:1.6;
+    opacity:0;
+    transition: opacity 1s ease;
+}
+
+.lesson.show{
+    display:block;
+    opacity:1;
+}
+
+.card{
+    background:#f0f8ff;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:15px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    margin:0;
+    cursor:pointer;
+    color:#0072ff;
+    transition: color 0.3s ease;
+}
+
+.card h3:hover{
+    color:#0056b3;
+}
+
+.card-content{
+    display:none;
+    margin-top:10px;
+}
+
+p{
+    text-align:justify;
+    margin-bottom:10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="box">
+
+<h2 align="center">Activity 1: Hulaan ang mga Salita na may Kinalaman sa Agrikultura</h2>
+<p align="center">Sagutan ang aktibidad upang mabuksan ang Lesson 2.</p>
+
+<div class="grid-row">
+<img src="ps.jpg" class="activity-img">
+<input type="text" id="a1" placeholder="Sagutin ang salita">
+</div>
+
+<div class="grid-row">
+<img src="pi.jpg" class="activity-img">
+<input type="text" id="a2" placeholder="Sagutin ang salita">
+</div>
+
+<div class="grid-row">
+<img src="ph.jpg" class="activity-img">
+<input type="text" id="a3" placeholder="Sagutin ang salita">
+</div>
+
+<div class="grid-row">
+<img src="pt.jpg" class="activity-img">
+<input type="text" id="a4" placeholder="Sagutin ang salita">
+</div>
+
+<center>
+<button onclick="check()">Suriin ang Sagot</button>
+<p id="result"></p>
+</center>
+
+</div>
+
+<!-- LESSON NOTES -->
+<div class="box lesson" id="lesson">
+<h1>Lesson 2: Sektor ng Agrikultura</h1>
+
+<p>Ang agrikultura ay agham at sining ng pagpaparami ng halaman at hayop. Ito ay mahalagang sektor na nagbibigay pagkain at hanapbuhay sa maraming Pilipino.</p>
+
+<!-- GAMPANIN -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Gampanin ng Agrikultura</h3>
+<div class="card-content">
+<p><strong>Pagsasaka:</strong> Pangunahing pananim: palay, mais, niyog, tubo, saging, pinya, at iba pa na karaniwang kinokonsumo sa loob at labas ng bansa.<br>
+Kita mula sa pagsasaka: ₱797.731 bilyon.</p>
+
+<p><strong>Pangingisda:</strong> Nauuri sa tatlo: komersiyal, munisipal, at aquaculture.<br>
+Bahagi rin ang panghuhuli ng hipon at sugpo.</p>
+
+<p><strong>Paghahayupan:</strong> Pag-aalaga ng mga hayop para sa karne, hibla, gatas, itlog, at iba pa.<br>
+Kasama rito ang pang-araw-araw na pangangalaga, pagpili ng pag-aanak, at pagpapalaki ng mga hayop.</p>
+
+<p><strong>Paggugubat:</strong> Patuloy na nililinang ang kagubatan sa kabila ng pagkaubos ng yaman nito.<br>
+Pinagkukunan ng plywood, tabla, troso, veneer, rattan, nipa, anahaw, kawayan, at iba pa.</p>
+</div>
+</div>
+
+<!-- KAHALAGAHAN -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Kahalagahan ng Agrikultura</h3>
+<div class="card-content">
+<p>Pinagmumulan ng pagkain.<br>
+Pinagkukunan ng hilaw na materyales upang makabuo ng panibagong produkto.<br>
+Nagkakaloob ng trabaho sa maraming Pilipino.<br>
+Nagpapasok ng dolyar sa bansa.<br>
+Pinagkukunan ng sobrang manggagawa patungo sa ibang sektor ng ekonomiya.</p>
+</div>
+</div>
+
+<!-- SULIRANIN -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Suliranin ng Agrikultura</h3>
+<div class="card-content">
+<p><strong>Pagsasaka:</strong> Pagliit ng lupang sakahan, paggamit ng makabagong teknolohiya, kakulangan ng pasilidad at imprastraktura sa kabukiran, kakulangan ng suporta mula sa ibang sektor, pagbibigay prayoridad sa industriya, pagdagsa ng dayuhang kalakal, epekto ng climate change.</p>
+
+<p><strong>Pangingisda:</strong> Mapanirang operasyon ng malalaking komersyal na mangingisda, epekto ng polusyon sa pangisdaan, lumalaking populasyon ng bansa, kahirapan sa hanay ng mga mangingisda.</p>
+
+<p><strong>Paghahayupan:</strong> Pagkakaroon ng mga peste sa alagang hayop tulad ng baboy at manok.</p>
+
+<p><strong>Paggugubat:</strong> Mabilis na pagkaubos ng mga likas na yaman.</p>
+</div>
+</div>
+
+<!-- MGA PATAKARAN AT PROGRAMA -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Mga Patakaran at Programa sa Agrikultura</h3>
+<div class="card-content">
+<p><strong>Panahon bago sakop ng dayuhan:</strong> Ang mga sinaunang Pilipino ay nakakapag-may-ari ng lupa sa pamamagitan ng pagiging unang nagtayo ng bahay.<br>
+Wala pang titulo o karapatan; ang pinagbasehan lamang ay salita ng bawat isa.</p>
+
+<p><strong>Panahon ng Kastila:</strong> Encomienda System – lupang gantimpala sa matapat na naglilingkod sa hari ng Espanya at sa mga tumulong sa pananakop sa Pilipinas.</p>
+
+<p><strong>Panahon ng Amerikano:</strong> Binili ng Amerika ang 160,000 hectares ng lupa mula sa mga prayle para sa mga magsasaka.<br>
+Land Registration Act ng 1902 – sistemang Torrens para sa titulo ng lupa.<br>
+Public Land Act ng 1902 – pamamahagi ng pampublikong lupa sa mga nagbubungkal.</p>
+
+<p><strong>Panahon ng Kasarinlan:</strong> Batas Republika Blg. 1160 – National Resettlement and Rehabilitation Administration (NARRA).<br>
+Batas Republika Blg. 1190 – proteksyon laban sa mapang-abusong may-ari ng lupa.<br>
+Agricultural Land Reform Code of 1963 – nagpalaya sa magsasaka mula sa pagkaalipin at kahirapan.<br>
+Atas ng Pangulo Blg.2 (1972) at Blg.27 – reporma sa lupa at pamamahagi sa walang lupang magsasaka.<br>
+Batas Republika Blg. 6657 ng 1988 – Comprehensive Agrarian Reform Program (CARP).</p>
+
+<p><strong>MGA NAISAKATUPARAN UPANG MAIANGAT ANG KALAGAYANG PANGKABUHAYAN NG MAGSASAKA:</strong> Pagtatayo ng bahay-ugnayan (bagsakan), pagtatayo ng gulayan, Pangulong Diosdado Macapagal Agrarian Reform Scholarship Program, Kalahi agrarian reform zones.</p>
+
+<p><strong>Pangingisda:</strong> Pagtatayo ng mga daungan, Philippine Fisheries Code of 1998, fishery research program upang maparami at mapayaman ang yamang-tubig.</p>
+
+<p><strong>Paggugubat at Pagtrotroso:</strong> Community Livelihood Assistance Program (CLASP) – pagtuturo sa wastong paglinang ng likas na yaman.<br>
+National Integrated Protected Areas System (NIPAS) – pangangalaga ng kagubatan.<br>
+Sustainable Forest Management Strategy – permanente at maayos na pamamahala sa kagubatan.</p>
+
+<p><strong>Sangay ng Pamahalaan:</strong> Department of Agriculture – gabay sa makabagong teknolohiya at tamang pagtatanim.<br>
+Bureau of Fisheries and Aquatic Resources – paunlarin ang larangan ng pangingisda.<br>
+Bureau of Animal Industry – nangangasiwa sa paghahayupan.<br>
+Ecosystem Research and Development Bureau – pananaliksik para sa pangangalaga ng kapaligiran at yamang gubat.<br>
+Landbank of the Philippines – kaagapay sa pagpapaunlad ng kabuhayan ng mga magsasaka.</p>
+</div>
+</div>
+
+</div>
+
+<script>
+function check(){
+    let w1=document.getElementById("a1").value.toLowerCase();
+    let w2=document.getElementById("a2").value.toLowerCase();
+    let w3=document.getElementById("a3").value.toLowerCase();
+    let w4=document.getElementById("a4").value.toLowerCase();
+
+    if(w1=="pagsasaka" && w2=="pangingisda" && w3=="paghahayupan" && w4=="paggugubat"){
+        document.getElementById("result").innerHTML="🎉 Tama! Nabuksan ang Lesson 2.";
+        let lesson = document.getElementById("lesson");
+        lesson.classList.add("show");
+        lesson.scrollIntoView({behavior:"smooth"});
+    } else{
+        document.getElementById("result").innerHTML="May mali. Subukan muli.";
+    }
+}
+
+function toggleCard(header){
+    const content = header.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
+}
+
+function goBack(){
+    window.history.back();
+}
+</script>
+
+<center>
+<button onclick="goBack()">Go Back</button>
+</center>
+
+</body>
+</html>

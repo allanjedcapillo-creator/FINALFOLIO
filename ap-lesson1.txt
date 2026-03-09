@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aralin 1: Pambansang Kaunlaran</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:url("16598.jpg") center/cover no-repeat fixed;
+color:white;
+}
+
+.box{
+background:rgba(0,0,0,0.75);
+width:85%;
+margin:40px auto;
+padding:30px;
+border-radius:15px;
+}
+
+h1,h2{
+text-align:center;
+text-shadow:0 0 10px cyan;
+}
+
+/* activity layout */
+
+.grid-row{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:20px;
+margin-bottom:25px;
+flex-wrap:wrap;
+}
+
+.activity-img{
+width:120px;
+height:120px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* crossword boxes */
+
+.grid{
+display:flex;
+gap:6px;
+justify-content:center;
+}
+
+.grid input{
+width:40px;
+height:40px;
+text-align:center;
+font-size:20px;
+border:none;
+border-radius:6px;
+background:white;
+color:black;
+text-transform:uppercase;
+}
+
+.grid input:focus{
+background:#c8f7ff;
+outline:none;
+}
+
+/* buttons */
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:10px;
+background:#0072ff;
+color:white;
+font-size:16px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+/* lesson */
+
+.lesson{
+display:none;
+line-height:1.6;
+}
+
+ul{
+margin-left:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Activity 1: Hulaan ang mga Salita na may Kinalaman sa Pambansang Kaunlaran</h2>
+<p align="center">Sagutan ang aktibidad upang mabuksan ang Aralin 1.</p>
+
+<!-- PAGUNLAD -->
+<div class="grid-row">
+<img src="pa.jpg" class="activity-img">
+<div class="grid" id="grid1"></div>
+</div>
+
+<!-- PAGBABAGO -->
+<div class="grid-row">
+<img src="pb.jpg" class="activity-img">
+<div class="grid" id="grid2"></div>
+</div>
+
+<!-- EBOLUSYON -->
+<div class="grid-row">
+<img src="eb.jpg" class="activity-img">
+<div class="grid" id="grid3"></div>
+</div>
+
+<!-- PAGSULONG -->
+<div class="grid-row">
+<img src="pg.jpg" class="activity-img">
+<div class="grid" id="grid4"></div>
+</div>
+
+<center>
+<button onclick="checkPuzzle()">Suriin ang Sagot</button>
+<p id="result"></p>
+</center>
+
+</div>
+
+
+<!-- LESSON -->
+
+<div class="box lesson" id="lesson">
+
+<h1>Aralin 1: Pambansang Kaunlaran</h1>
+
+<h2>Pambansang Kaunlaran</h2>
+
+<p>
+Isang estado ng bansa kung saan tinatamasa ng mga mamamayan, lalo na ng pinakamababang uri,
+ang pagbabago sa ekonomiya at pamumuhay.
+</p>
+
+<h2>Mga Konsepto ng Pambansang Kaunlaran</h2>
+
+<ul>
+
+<li><b>Pagbabago</b>
+<ul>
+<li>Paraan upang maging iba o naiiba</li>
+<li>Proseso ng pag-iiba o pagkakaroon ng kaibahan sa ekonomiya at lipunan</li>
+</ul>
+</li>
+
+<li><b>Pag-unlad</b>
+<ul>
+<li>Pagbabago mula sa mababa tungo sa mataas na antas ng pamumuhay</li>
+<li>Pag-angat, pagsulong, o paglago sa pangkalahatang pamumuhay</li>
+<li>Isang aktibong proseso at ang pagsulong ay produkto nito (Fajardo)</li>
+<li>Ang kaunlaran ay matatamo lamang kung mapauunlad ang yaman ng buhay ng mga tao kaysa sa yaman ng ekonomiya nito (Amartya Sen)</li>
+</ul>
+</li>
+
+<li><b>Pagsulong</b>
+<ul>
+<li>Pag-usad tungo sa layunin o goal</li>
+<li>Pagpapaunlad ng kakayahan, kaalaman, at abilidad upang makasabay sa agos ng buhay</li>
+</ul>
+</li>
+
+<li><b>Ebolusyon</b>
+<ul>
+<li>Pagbabago sa mga katangian sa loob ng mahabang panahon</li>
+<li>Anuman ang unang dumating ay mas mabuti sa sinundang panahon</li>
+</ul>
+</li>
+
+</ul>
+
+<h2>Dalawang Konsepto ng Pag-unlad (Todaro & Smith, 2012)</h2>
+
+<ul>
+<li><b>Tradisyunal</b> – pagtamo ng patuloy na pagtaas ng income per capita.</li>
+<li><b>Makabago</b> – kumakatawan sa malawakang pagbabago sa buong sistemang panlipunan.</li>
+</ul>
+
+<h2>Mga Salik na Makatutulong sa Pagsulong ng Ekonomiya</h2>
+
+<ul>
+<li>Likas na Yaman</li>
+<li>Yamang-tao</li>
+<li>Kapital</li>
+<li>Teknolohiya at Inobasyon</li>
+</ul>
+
+<h2>Mga Palatandaan ng Pag-unlad</h2>
+
+<ul>
+<li>Makatwiran at dinamikong kaayusan ng panlipunan</li>
+<li>Kasaganaan at kasarinlan</li>
+<li>Kalayaan sa kahirapan</li>
+<li>Hanapbuhay para sa lahat</li>
+<li>Umaangat na istandard ng pamumuhay</li>
+<li>Mainam na uri ng buhay para sa lahat</li>
+<li>Sapat na mga lingkurang panlipunan</li>
+<li>Katarungang panlipunan</li>
+</ul>
+
+<h2>Sukatan ng Kaunlaran ng Bansa ayon sa United Nations</h2>
+
+<p>
+Bukod sa GDP at GNP, ginagamit ang <b>Human Development Index (HDI)</b>
+bilang panukat ng pag-unlad ng isang bansa.
+</p>
+
+<ul>
+<li>Kalusugan</li>
+<li>Edukasyon</li>
+<li>Antas ng pamumuhay</li>
+</ul>
+
+<h2>Antas ng Kaunlaran ng Bansa</h2>
+
+<ul>
+
+<li><b>Maunlad na Bansa</b>
+<ul>
+<li>Mataas na GDP</li>
+<li>Mataas na income per capita</li>
+<li>Mataas na HDI</li>
+</ul>
+</li>
+
+<li><b>Umuunlad na Bansa</b>
+<ul>
+<li>Pinauunlad pa ang mga industriya</li>
+<li>Hindi pantay ang GDP at HDI</li>
+</ul>
+</li>
+
+<li><b>Papaunlad na Bansa</b>
+<ul>
+<li>Kulang sa industriyalisasyon</li>
+<li>Mababang GDP at HDI</li>
+</ul>
+</li>
+
+</ul>
+
+</div>
+
+
+<script>
+
+/* words */
+
+const puzzles = [
+{word:"PAGUNLAD", grid:"grid1"},
+{word:"PAGBABAGO", grid:"grid2"},
+{word:"EBOLUSYON", grid:"grid3"},
+{word:"PAGSULONG", grid:"grid4"}
+];
+
+/* create boxes */
+
+puzzles.forEach(p=>{
+let grid=document.getElementById(p.grid);
+
+for(let i=0;i<p.word.length;i++){
+let input=document.createElement("input");
+input.maxLength=1;
+grid.appendChild(input);
+}
+});
+
+/* check answers */
+
+function checkPuzzle(){
+
+let correctWords = 0;
+
+puzzles.forEach(p=>{
+
+let inputs=document.querySelectorAll("#"+p.grid+" input");
+let typed="";
+
+inputs.forEach(i=>{
+typed += i.value.toUpperCase();
+});
+
+if(typed === p.word){
+correctWords++;
+inputs.forEach(i=> i.style.background="#9cff9c");
+}else{
+inputs.forEach(i=> i.style.background="#ffb3b3");
+}
+
+});
+
+if(correctWords === puzzles.length){
+
+document.getElementById("result").innerHTML="🎉 Tama! Nabuksan na ang Aralin 1.";
+document.getElementById("lesson").style.display="block";
+
+window.scrollTo({
+top:document.getElementById("lesson").offsetTop,
+behavior:"smooth"
+});
+
+}else{
+
+document.getElementById("result").innerHTML="May mali pa. Subukan ulit.";}}
+
+</script>
+<script>
+function goBack(){
+    window.history.back();
+}
+</script>
+
+<center>
+<button class="fancy-btn" onclick="goBack()">Go Back</button>
+</center>
+
+
+</body>
+</html>
+

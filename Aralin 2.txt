@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AP Aralin 2</title>
+<style type="text/css">
+p{color:maroon;font-family:Algerian;}
+h1{color:blue;font-family:arial;font-weight:200px;}
+</style>
+</head>
+<body bgcolor="ivory">
+<h1>Ekwilibriyo</h1><br>
+<p>Ang presyong ekwilibriyo ay ang lebel ng presyo na umiiral sa pamilihan upang maganap ang bilihan sa pagitang ng mamimili at prodyuser</p><br>
+<h1>Kita</h1><br>
+<p>Ang salapi na tinanggap ng tao kapalit ng ginawang produkto at serbisyo ay tinatawag na kita. Ito ang basehan ng pagtatakda ng badyet sa pamilya</p>
+<h1>Populasyon</h1><br>
+<p>Ang populasyon ay potential market ng isang bansa</p><br>
+<h1>Presyo ng magkaugnay na rodukto</h1><br>
+<p>Mayroong tinatawag na substitue goods o mga produkto na pamalit sa ginagamit na mga prdukto at ang complimentary goods o mga produkto na kinukonsumo ng sabay</p><br>
+<h1>Okasyon</h1><br>
+<p>Sa kultura ng ating bansa likas sa ating mga Pilipino ang ipagdiwang ang iba't ibang okasyon na dumarating</p>
+<h1>Ekspektasyon</h1>
+<p>Sa panahon ngayon maraming kalamidad ang nangyayari sa iba't ibang panig ng daigdig at sa ating bansa, may kaguluhan at digmaan sa pagitan ng mga bansa. Dahil sa mga sitwasyong ito ang mga mamimili ay nagpapanic-buying</p>
+
+<img src="Dami.jpg" width="500" height="333">
+
+<img src="Ugnayan.jpg" width="500" height="333">
+</body>
+</html>

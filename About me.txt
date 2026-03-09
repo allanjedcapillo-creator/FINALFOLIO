@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>About Me</title></head>
+<body style="background-color:beige; font-family:Arial; text-align:center;">
+<img src="Jed.jpg" width="500" height="333" alt="Allan Jed P. Capillo">
+<br>
+<p style="color:DarkBlue;font-style:TimesNewRoman;font-size:20px;"> Hi! I am Allan Jed P. Capillo and im 14 years old (currently) and i was born on July 14,2011. My dream is to become an engineer or a lawyer even tho im not good at math &#128517; but that's fine. My favorite subject is English and i love learning. My favorite Color is Blue. My favorite Movie is The Conjuring. While my favorite game is Roblox.Also my favorite song is Die with A Smile<br><br><img src="Roblox.webp" width="500" height="333"><img src="Rob.png" width="500" height="333"><img src="Conjuring.jpg" width="500" height="333">
+<video width="400" controls>   <source src="Smile.mp4" type="video/mp4">
+  <source src="Smile_bbb.ogg" type="video/ogg">
+</video></p>
+</body>
+</html> 

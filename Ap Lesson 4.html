@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 4: Sektor ng Paglilingkod</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:url("16598.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color:#000;
+}
+
+.box{
+    background:white;
+    width:85%;
+    margin:40px auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+h1,h2{
+    text-align:center;
+    color:#0072ff;
+}
+
+.activity input{
+    padding:10px;
+    margin:5px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.activity .grid-row{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+    gap:15px;
+}
+
+.activity-img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+    border:1px solid #0072ff;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(45deg,#00c6ff,#0072ff);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover{
+    transform:scale(1.1);
+    background:linear-gradient(45deg,#0072ff,#00c6ff);
+}
+
+.lesson{
+    display:none;
+    line-height:1.6;
+    opacity:0;
+    transition: opacity 1s ease;
+}
+
+.lesson.show{
+    display:block;
+    opacity:1;
+}
+
+.card{
+    background:#f0f8ff;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:15px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    margin:0;
+    cursor:pointer;
+    color:#0072ff;
+}
+
+.card h3:hover{
+    color:#0056b3;
+}
+
+.card-content{
+    display:none;
+    margin-top:10px;
+}
+
+p{
+    text-align:justify;
+    margin-bottom:10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="box">
+
+<h2>Activity: Hulaan ang Salita</h2>
+<p align="center">Hulaan ang mga salita na may kinalaman sa sektor ng paglilingkod upang mabuksan ang ikaapat na Aralin.</p>
+
+<div class="activity">
+<div class="grid-row">
+<img src="un.jpg" class="activity-img">
+<input id="a1" placeholder="1">
+</div>
+
+<div class="grid-row">
+<img src="ue.jpg" class="activity-img">
+<input id="a2" placeholder="2">
+</div>
+
+<div class="grid-row">
+<img src="bd.jpg" class="activity-img">
+<input id="a3" placeholder="3">
+</div>
+
+<div class="grid-row">
+<img src="jm.jpg" class="activity-img">
+<input id="a4" placeholder="4">
+</div>
+</div>
+
+<br>
+<button onclick="check()">Suriin ang Sagot</button>
+<p id="result"></p>
+</div>
+
+<!-- LESSON NOTES -->
+<div class="box lesson" id="lesson">
+
+<h1>Lesson 4: Sektor ng Paglilingkod</h1>
+
+<p>● Ang umaalalay sa buong yugto ng produksyon, distribusyon, kalakalan, at pagkonsumo ng mga produkto sa loob o labas ng bansa.<br>
+● Kilala rin ito bilang tersarya o ikatlong sektor ng ekonomiya matapos ang agrikultura at industriya.<br></p>
+
+<!-- PORMAL NA SEKTOR -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Pormal na Sektor sa Ilalim ng Paglilingkod</h3>
+<div class="card-content">
+<p><strong>Transportasyon, Komunikasyon, at mga Imbakan:</strong> Mga serbisyong pampublikong sasakyan, paglilingkod ng telepono, at mga pinapaupahang bodega.<br>
+<strong>Kalakalan:</strong> Pagpapalitan ng iba’t ibang produkto at serbisyo.<br>
+<strong>Pananalapi:</strong> Serbisyong may kinalaman sa bangko, insurance, at pamumuhunan.<br>
+Nagbibigay ng tulong pinansyal gaya ng mga bangko, bahay-sanglaan, atbp.<br>
+<strong>Paupahang Bahay at Real Estate:</strong> Mga paupahan tulad ng apartment, subdivision, townhouse, condominium.<br>
+<strong>Paglilingkod ng Pampribado:</strong> Lahat ng mga serbisyo mula sa pribadong sektor.<br>
+<strong>Paglilingkod ng Pampubliko:</strong> Lahat ng serbisyo na ipinagkakaloob ng pamahalaan.</p>
+</div>
+</div>
+
+<!-- MGA AHENSIYA -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Mga Ahensiyang Tumulong sa Sektor ng Paglilingkod</h3>
+<div class="card-content">
+<p><strong>Department of Labor and Employment:</strong> Pangangalaga sa kapakanan ng mga manggagawang Pilipino, maayos na oportunidad sa trabaho, at regulasyon ng paggawa.<br>
+<strong>Overseas Workers Welfare Administration:</strong> Tumitingin sa kapakanan ng mga Overseas Filipino Workers.<br>
+<strong>Philippine Overseas Employment Administration:</strong> Isulong at paunlarin ang mga programa ukol sa paghahanapbuhay sa ibayong-dagat at pangalagaan ang kapakanan ng mga OFW.<br>
+Itinatag sa bisa ng Executive Order 797 (1982).<br>
+<strong>Technical Education and Skills Development Authority:</strong> Hikayatin ang buong partisipasyon ng industriya, paggawa, lokal na pamahalaan, at institusyong teknikal at bokasyonal.<br>
+Itinatag sa bisa ng R.A. 7796 (1994).<br>
+<strong>Professional Regulation Commission:</strong> Nangangasiwa sa gawain ng mga manggagawang propesyonal upang matiyak ang kahusayan.<br>
+<strong>Commission on Higher Education:</strong> Nangangasiwa sa pamantasan at kolehiyo upang maitaas ang kalidad ng edukasyon.</p>
+</div>
+</div>
+
+<!-- SULIRANIN -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Suliranin ng Paglilingkod</h3>
+<div class="card-content">
+<p>Unemployement<br>
+* Structural Unemployement<br>
+* Cyclical Unemployement<br>
+* Seasonal Unemployement<br>
+Job Mismatch<br>
+Brain Drain<br>
+Underemployement</p>
+</div>
+</div>
+
+<!-- MGA BATAS -->
+<div class="card">
+<h3 onclick="toggleCard(this)">Mga Batas na Nangangalaga sa Karapatan ng Manggagawa</h3>
+<div class="card-content">
+<p><strong>Artikulo 94 - Holiday Pay:</strong> Bayad ng manggagawa kahit hindi pumasok sa araw ng pista opisyal.<br>
+<strong>Republic Act 6727 - Wage Rationalization Act:</strong> Pagsasaayos ng minimum wage.<br>
+<strong>Artikulo 91-93 - Premium Pay:</strong> Karagdagang bayad sa loob ng walong oras sa araw ng pahinga at special days.<br>
+<strong>Artikulo 87 - Overtime Pay:</strong> Bayad sa pagtatrabaho lampas sa 8 oras.<br>
+<strong>Artikulo 86 - Night Shift Differential:</strong> Bayad sa pagtatrabaho sa gabi, hindi bababa sa 10% ng regular na sahod sa bawat oras sa pagitan ng 10PM-6AM.<br>
+<strong>Artikulo 96 - Service Charges:</strong> Karapatan sa 85% ng service charges.<br>
+<strong>Artikulo 95 - Service Incentive Leave:</strong> Taunang leave ng limang araw.<br>
+<strong>Republic Act 1161 - Maternity Leave:</strong> Benepisyo sa nagdadalang-taong manggagawa.<br>
+<strong>Republic Act 8972 - Paternity Leave para sa mga solong magulang:</strong> Para sa solong magulang o indibidwal na may responsibilidad sa pagiging magulang.<br>
+<strong>Republic Act 8187 - Paternity Leave:</strong> Maaaring gamitin ng empleyadong lalaki sa unang apat na araw mula nang manganak ang legal na asawa.<br>
+<strong>Presidential Decree 851 - Thirteenth Month Pay:</strong> Bayad bago ika-24 ng Disyembre.<br>
+<strong>Presidential Decree 626 - Benepisyo sa Employees Compensation Program:</strong> Compensation package sa manggagawa sakaling may pagkakasakit na may kaugnayan sa trabaho.</p>
+</div>
+</div>
+
+</div>
+
+<script>
+function check(){
+    let w1=document.getElementById("a1").value.toLowerCase();
+    let w2=document.getElementById("a2").value.toLowerCase();
+    let w3=document.getElementById("a3").value.toLowerCase();
+    let w4=document.getElementById("a4").value.toLowerCase();
+
+    if(w1=="underemployement" && w2=="unemployement" && w3=="brain drain" && w4=="job mismatch"){
+        document.getElementById("result").innerHTML="🎉 Tama! Nabuksan ang Lesson 4.";
+        let lesson = document.getElementById("lesson");
+        lesson.classList.add("show");
+        lesson.scrollIntoView({behavior:"smooth"});
+    } else{
+        document.getElementById("result").innerHTML="May mali. Subukan muli.";
+    }
+}
+
+function toggleCard(header){
+    const content = header.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
+}
+
+function goBack(){
+    window.history.back();
+}
+</script>
+
+<center>
+<button onclick="goBack()">Go Back</button>
+</center>
+
+</body>
+</html>

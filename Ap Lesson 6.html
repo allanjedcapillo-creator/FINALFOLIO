@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 6: Kalakalang Panlabas</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:url("16598.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color:#000;
+}
+
+.box{
+    background:white;
+    width:85%;
+    margin:40px auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+h1,h2{
+    text-align:center;
+    color:#0072ff;
+}
+
+.activity input{
+    padding:10px;
+    margin:5px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.activity .grid-row{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+    gap:15px;
+}
+
+.activity-img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+    border:1px solid #0072ff;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(45deg,#00c6ff,#0072ff);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover{
+    transform:scale(1.1);
+    background:linear-gradient(45deg,#0072ff,#00c6ff);
+}
+
+.lesson{
+    display:none;
+    opacity:0;
+    transition:opacity 1s ease;
+    line-height:1.6;
+}
+
+.lesson.show{
+    display:block;
+    opacity:1;
+}
+
+.card{
+    background:#f0f8ff;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:15px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    margin:0;
+    cursor:pointer;
+    color:#0072ff;
+}
+
+.card h3:hover{
+    color:#0056b3;
+}
+
+.card-content{
+    display:none;
+    margin-top:10px;
+}
+
+p{
+    text-align:justify;
+    margin-bottom:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Activity: Hulaan ang Salita</h2>
+<p align="center">Hulaan ang mga salita na may kinalaman sa Kalakalang Panlabas upang mabuksan ang Lesson 6.</p>
+
+<div class="activity">
+<div class="grid-row">
+<img src="ta.jpg" class="activity-img">
+<input id="a1" placeholder="1">
+</div>
+
+<div class="grid-row">
+<img src="qu.jpg" class="activity-img">
+<input id="a2" placeholder="2">
+</div>
+
+<div class="grid-row">
+<img src="su.jpg" class="activity-img">
+<input id="a3" placeholder="3">
+</div>
+</div>
+
+<br>
+<button onclick="check()">Suriin ang Sagot</button>
+<p id="result"></p>
+</div>
+
+<!-- LESSON NOTES -->
+<div class="box lesson" id="lesson">
+
+<h1>Lesson 6: Kalakalang Panlabas</h1>
+
+<p>
+● Palitan ng produkto at serbisyo sa pagitan ng mga bansa.<br>
+● Ito ay nagaganap sapagkat walang bansa ang maaaring makatugon sa lahat ng kanyang pangangailangan ng walang tulong mula sa ibang bansa.<br>
+● Bilateral: 2 bansa (hal. U.S at PH)<br>
+● Bloc: Organisasyon at 1 bansa (hal. APEC at PH)<br>
+● EKSPORT (Pagluluwas): pagpapadala ng mga produkto at serbisyo sa ibang bansa.<br>
+● IMPORT (Pag-aangkat): pagbili ng kalakal mula sa ibang bansa.<br>
+</p>
+
+<h3>Dahilan ng Kalakalang Panlabas</h3>
+<p>
+1. Pagkakaiba ng Teknolohiya<br>
+2. Pagkakaiba sa Pinagkukunang Yaman<br>
+3. Pagkakaiba sa Panlasa<br>
+4. Pagkakaiba sa Halaga ng Produksyon<br>
+</p>
+
+<h3>Patakarang Umaapekto sa Kalakalang Panlabas</h3>
+<p>
+<strong>A. Taripa/Tariff:</strong><br>
+- Buwis sa mga produktong inaangkat.<br>
+- Nagpapataas ng presyo at nagpapababa ng benta.<br>
+- Nagpapataw ng mataas na taripa upang mapigil ang pagpasok ng dayuhang produkto.<br><br>
+
+<strong>B. Kota (Quota):</strong><br>
+- Limitahan ang pagpasok ng kalabang produkto.<br><br>
+
+<strong>C. Subsidy:</strong><br>
+- Tulong ng gobyerno upang bumaba ang halaga ng produksyon ng lokal na produkto.<br>
+</p>
+
+<h3>Batayan ng Kalakalang Panlabas (David Ricardo)</h3>
+<p>
+● Absolute Advantage: Nakakalikha ng mas maraming produkto gamit ang mas kaunting salik kumpara sa ibang bansa.<br>
+● Comparative Advantage: Espesyalisasyon sa paglikha ng kalakal; mas efficient kumpara sa ibang bansa.<br>
+</p>
+
+<h3>Balance of Trade (BOT)</h3>
+<p>
+● Kalagayan ng kabayaran ng export at import.<br>
+● Trade Deficit: import > export<br>
+● Trade Surplus: export > import<br>
+</p>
+
+<h3>Kabutihan at Di-Kabutihan ng Pakikipagkalakalan</h3>
+<p>
+<strong>Kabutihan:</strong> Mas maraming produkto, mas mataas na kalidad, pagkakaunawaan ng mga mamamayan, lumalawak ang pamilihan.<br>
+<strong>Di-Kabutihan:</strong> Nagiging palaasa sa imported, hindi nalilinang ang pagkamalikhain, pagkawala ng sariling pagkakakilanlan.<br>
+</p>
+
+<h3>Samahang Pandaigdigang Pang-ekonomiko</h3>
+<p>
+World Trade Organization (WTO)<br>
+● Pinasinayaan noong Enero 1, 1995.<br>
+● Namamahala sa global trading system.<br>
+● Layunin: pababain ang trade barriers, platform para sa negosasyon, trade sanction sa hindi sumunod.<br><br>
+
+Asia-Pacific Economic Council (APEC)<br>
+● Itinatag Nobyembre 1989.<br>
+● Layunin: liberalisasyon ng kalakalan at pamumuhunan, pagpapadali ng negosyo, pagtutulungang pang-ekonomiya.<br><br>
+
+ASEAN<br>
+● Itinatag Agosto 8, 1967.<br>
+● Layunin: malayang kalakalan sa bawat kasapi at dialogue partner, ASEAN Free Trade Area (AFTA) noong 1992, CEPT para alisin taripa at quota.<br>
+</p>
+
+<h3>Programang Nagtataguyod sa Kalakalang Panlabas</h3>
+<p>
+a. Liberalisasyon sa Sektor ng Pagbabangko (R.A 7721)<br>
+b. Foreign Trade Services Corps (FTSC)<br>
+c. Trade and Industry Information Center (TIIC)<br>
+d. Center for Industrial Competitiveness<br>
+</p>
+
+<h3>Karagdagang Impormasyon</h3>
+<p>
+Liberalisasyon, Deregulasyon, Dolyar, Pribatisasyon, Balance of Payment, Dumping, Kota/Quota.<br>
+</p>
+
+</div>
+
+<script>
+function check(){
+    let w1=document.getElementById("a1").value.toLowerCase();
+    let w2=document.getElementById("a2").value.toLowerCase();
+    let w3=document.getElementById("a3").value.toLowerCase();
+
+    if(w1=="taripa" && w2=="kota" && w3=="subsidy"){
+        document.getElementById("result").innerHTML="🎉 Tama! Nabuksan ang Lesson 6.";
+        let lesson = document.getElementById("lesson");
+        lesson.classList.add("show");
+        lesson.scrollIntoView({behavior:"smooth"});
+    } else{
+        document.getElementById("result").innerHTML="May mali. Subukan muli.";
+    }
+}
+
+function goBack(){
+    window.history.back();
+}
+</script>
+
+<center>
+<button onclick="goBack()">Go Back</button>
+</center>
+
+</body>
+</html>
